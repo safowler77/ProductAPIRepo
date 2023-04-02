@@ -1,0 +1,252 @@
+{
+	"id": "a206d027-c8ee-4835-a570-6568cbc2361a",
+	"name": "productsapp-automation",
+	"timestamp": "2023-04-02T12:03:57.797Z",
+	"collection_id": "26682721-34e123c7-e7fb-4a16-b0ab-f9977bc740a1",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-04-02T12:03:57.251Z",
+	"totalFail": 16,
+	"results": [
+		{
+			"id": "0b7f9132-6462-4e3b-92f8-82e09f67a149",
+			"name": "Get All Products",
+			"url": "localhost:53009/api/products",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response to have an Id": true,
+				"value of [0].Id to be 1": true,
+				"value of [1].Id to be 2": true,
+				"value of [2].Id to be 3": true,
+				"value of [2].Name to be Hammer": true,
+				"value of [1].Name to be Toys": true,
+				"value of [0].Name to be Tomato Soup": true,
+				"value of [0].Category to be Groceries": true,
+				"value of [1].Category to be Toys": true,
+				"value of [2].Category to be Hardware": true,
+				"value of [0].Price to be 1": true,
+				"value of [1].Price to be 2": true,
+				"value of [2].Price to be 3": true,
+				"response to be 200 OK": true,
+				"response time less than 1000MS": true
+			},
+			"testPassFailCounts": {
+				"response to have an Id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [0].Id to be 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [1].Id to be 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [2].Id to be 3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [2].Name to be Hammer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [1].Name to be Toys": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [0].Name to be Tomato Soup": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [0].Category to be Groceries": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [1].Category to be Toys": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [2].Category to be Hardware": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [0].Price to be 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [1].Price to be 2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"value of [2].Price to be 3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response to be 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response time less than 1000MS": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"response to have an Id": true,
+					"value of [0].Id to be 1": true,
+					"value of [1].Id to be 2": true,
+					"value of [2].Id to be 3": true,
+					"value of [2].Name to be Hammer": true,
+					"value of [1].Name to be Toys": true,
+					"value of [0].Name to be Tomato Soup": true,
+					"value of [0].Category to be Groceries": true,
+					"value of [1].Category to be Toys": true,
+					"value of [2].Category to be Hardware": true,
+					"value of [0].Price to be 1": true,
+					"value of [1].Price to be 2": true,
+					"value of [2].Price to be 3": true,
+					"response to be 200 OK": true,
+					"response time less than 1000MS": true
+				}
+			]
+		},
+		{
+			"id": "618ae054-bfa0-41a7-8cd8-f39fe0f652c6",
+			"name": "Other End of Point",
+			"url": "localhost:53009/api/products/id?id=1",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"response to have an Id": false,
+				"value of [0].Id to be 1": false,
+				"value of [1].Id to be 2": false,
+				"value of [2].Id to be 3": false,
+				"value of [2].Name to be Hammer": false,
+				"value of [1].Name to be Toys": false,
+				"value of [0].Name to be Tomato Soup": false,
+				"value of [0].Category to be Groceries": false,
+				"value of [1].Category to be Toys": false,
+				"value of [2].Category to be Hardware": false,
+				"value of [0].Price to be 1": false,
+				"value of [1].Price to be 2": false,
+				"value of [2].Price to be 3": false,
+				"response to be 200 OK": true,
+				"response time less than 1000MS": true
+			},
+			"testPassFailCounts": {
+				"response to have an Id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [0].Id to be 1": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [1].Id to be 2": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [2].Id to be 3": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [2].Name to be Hammer": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [1].Name to be Toys": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [0].Name to be Tomato Soup": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [0].Category to be Groceries": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [1].Category to be Toys": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [2].Category to be Hardware": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [0].Price to be 1": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [1].Price to be 2": {
+					"pass": 0,
+					"fail": 1
+				},
+				"value of [2].Price to be 3": {
+					"pass": 0,
+					"fail": 1
+				},
+				"response to be 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response time less than 1000MS": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"response to have an Id": false,
+					"value of [0].Id to be 1": false,
+					"value of [1].Id to be 2": false,
+					"value of [2].Id to be 3": false,
+					"value of [2].Name to be Hammer": false,
+					"value of [1].Name to be Toys": false,
+					"value of [0].Name to be Tomato Soup": false,
+					"value of [0].Category to be Groceries": false,
+					"value of [1].Category to be Toys": false,
+					"value of [2].Category to be Hardware": false,
+					"value of [0].Price to be 1": false,
+					"value of [1].Price to be 2": false,
+					"value of [2].Price to be 3": false,
+					"response to be 200 OK": true,
+					"response time less than 1000MS": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 18,
+	"collection": {
+		"requests": [
+			{
+				"id": "0b7f9132-6462-4e3b-92f8-82e09f67a149",
+				"method": "GET"
+			},
+			{
+				"id": "618ae054-bfa0-41a7-8cd8-f39fe0f652c6",
+				"method": "GET"
+			}
+		]
+	}
+}
